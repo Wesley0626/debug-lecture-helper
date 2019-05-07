@@ -48,7 +48,7 @@ class App extends Component {
           type="number"
           onChange={(e) => this.setState({ secondNum: e.target.value })} />
         <br /><br />
-        <button onClick={() => this.calculate}>Calculate</button>
+        <button onClick={() => this.calculate()}>Calculate</button>
         {
           this.state.result ? (
             <p>Result is {this.state.result}</p>
